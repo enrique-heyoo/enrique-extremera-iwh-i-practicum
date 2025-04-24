@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 Researchers
+        a(href="/update-cobj") Add to this table
+        table
+            thead
+                tr
+                    th Name
+                    th Field of Study
+                    th Institution or University
+            tbody
+                each researcher in data
+                    tr
+                        td #{researcher.properties.name}
+                        td #{researcher.properties.field_study}
+                        td #{researcher.properties.institution}
