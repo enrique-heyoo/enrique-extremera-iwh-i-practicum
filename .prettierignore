@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Environment
+.env
+.env.*
+
+# Logs
+logs
+
+# IDE and editor files
+.git
+.idea/
+.vscode/
+
+# Build
+dist/
+build/
+*.min.js
