@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 Update Researcher
+        form(action="/update-cobj" method="post").form
+            .form-group
+                label(for="name").form__label Name
+                input(type="text" id="name" name="name" required).form__input
+            .form-group
+                label(for="field_study").form__label Field of Study
+                input(type="text" id="field_study" name="field_study").form__input
+            .form-group
+                label(for="institution").form__label Institution or University
+                input(type="text" id="institution" name="institution").form__input
+            button(type="submit").form__button Update
